@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Detective - The Emerald Deva</title>
+<meta name="description" content="A cinematic browser detective game. A stolen amulet, four suspects, one Bangkok night. Search real scenes, question suspects, build your case board - solo or with a partner, no server needed.">
+<meta property="og:title" content="City Detective - The Emerald Deva">
+<meta property="og:description" content="A stolen amulet. Four suspects. One Bangkok night. Play solo or solve together on two phones, even offline.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0d10'/%3E%3Cpath d='M16 5 L22 13 L16 27 L10 13 Z' fill='none' stroke='%23c9a24b' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='15' r='3.4' fill='%233fae87'/%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b0d10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Fraunces:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="walk.css?v=11">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div id="app"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="cases.js?v=11"></script>
+<script src="case-thailand.js?v=11"></script>
+<script src="case-hongkong.js?v=11"></script>
+<script src="case-berlin.js?v=11"></script>
+<script src="sync.js?v=11"></script>
+<script src="amulet3d.js?v=11"></script>
+<script src="walk3d.js?v=11"></script>
+<script src="engine.js?v=11"></script>
+<script>if ("serviceWorker" in navigator) window.addEventListener("load", function(){ navigator.serviceWorker.register("./sw.js"); });</script>
+</body>
+</html>
